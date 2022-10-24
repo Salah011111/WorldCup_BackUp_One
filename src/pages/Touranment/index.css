@@ -1,0 +1,1224 @@
+    .TourPage{
+        position: relative;
+        display: flex;
+        position: relative;
+        height: 100vh;
+        flex-direction: column;
+        width:100%;
+    }
+
+    /* 页面背景图片 */
+    .TourPagebg{
+        background:url('../../image/PCBackgroundImage04.png');
+        background-size: 100% 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+
+    .tour{
+        /* position: relative; */
+        z-index: 2;
+        padding: 0 160px;
+        box-sizing: border-box;
+        width:100%;
+    }
+
+    /* 封面右侧图片 */
+    .coverImage{
+        position: absolute;
+        right: 0;
+        top: 182px;
+        background:url('../../image/TourImage01.png');
+        background-size: 100% 100%;
+        z-index: 0;
+        object-fit: cover;
+        width: 1148px;
+        height: 619px;
+        border-radius: 65px 0px 0px 65px;
+        z-index:2;
+    }
+
+    .PhonetextButtonBlock{
+        display: none;
+    }
+
+    /* 封面左侧图片样式 */
+    .worldCupImage{
+        width: 533px;
+        height: 640px;
+        object-fit: cover;
+        background:url('../../image/worldCupLogo.png');
+        background-size: 100% 100%;
+        margin-left:-640px;
+        z-index:2;
+        position: absolute;
+    }
+
+    /* 左侧文字按钮 */
+    .textButtonBlock{
+        margin:196px 0 0 90px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* 左侧第一行文字 */
+    .textButtonBlock span:nth-child(1){
+        font-size: 60px;
+        -webkit-font-family: Frick 0.3;
+        font-weight: 400;
+        color: #F3F3F3;
+        text-shadow: 0px 7px 8px rgba(0,0,0,0.23);
+        position: relative;
+        z-index: 5;
+    }
+
+    /* 左侧第二行文字 */
+    .textButtonBlock span:nth-child(2){
+        font-size: 30px;
+        font-family: Frick 0.3;
+        font-weight: 400;
+        color: #1E1E1E;
+        position: relative;
+        z-index: 5;
+        margin-top: 28px;
+        width:514px;
+    }
+
+    /* 买票按钮外部样式 */
+    .ticketbtn{
+        width: 98px;
+        height: 45px;
+        border: 2px solid #FFFFFF;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top:316px;
+        margin-left:113px;
+        position: relative;
+        z-index:1;
+        cursor: pointer;
+    }
+
+    /* ticket按钮文字样式 */
+    .ticketbtn span{
+        font-size: 18px;
+        font-family: Frick 0.3;
+        font-weight: 400;
+        color: #FEFEFE;
+    }
+
+    /* 时间倒计时显示区域 */
+    .timeBlock{
+        width: 1920px;
+        height: 171px;
+        background: linear-gradient(270deg, #3FBBFE, #A541FF);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding:0 159px 0 98px;
+        box-sizing: border-box;
+        /* margin-top:422px; */
+        margin-top: 446px;
+        position: relative;
+        width: 100%;
+    }
+
+    /* 倒计时左侧第一个区域布局 */
+    .timeItemOne{
+        margin:73px 0;
+    }
+
+    .timeItemOne span{
+        font-size: 30px;
+        font-family: Inter;
+        font-weight: 600;
+        color: #F3F3F3;
+    }
+
+    /* 倒计时中间区域布局 */
+    .timeItemTwo{
+        margin:53px 362px;
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;
+    }
+
+    /* 数字和标题同一列布局 */
+    .timeTitleArea{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    /* 显示数字的文字属性 */
+    .timeData{
+        font-family: Inter;
+        font-weight: bold;
+        color: #F3F3F3;
+    }
+
+    .timeTitleArea span:first-child{
+        font-size: 48px;
+    }
+
+    .timeTitleArea span:last-child{
+        font-size: 18px;
+    }
+
+    /* 显示数字的文字居中 */
+    .timeTitleArea span{
+        text-align: center;
+    }
+
+    /* 倒计时区域显示冒号文字内容 */
+    .pointArea{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* 倒计时区域显示冒号文字内容 */
+    .pointArea span{
+        font-size: 60px;
+    }
+
+    /* 倒计时区域显示世界杯图片区域 */
+    .timeItemThree{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* 倒计时区域右侧图片样式 */
+    .timeWorldCupImage{
+        width: 254px;
+        height: 66px;
+        object-fit: cover;
+    }
+
+    /* 展示图片区域 */
+    .ImageDisplay{
+        /* width: 1920px; */
+        height: 1131px;
+        background: #EEEEE4;
+        padding:49px 94px 88px 84px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width:100%;
+    }
+
+    /* 图片展示的标题区域 */
+    .ImagedisplayTitle{
+        margin:0 65px 43px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* 图片标题文字样式 */
+    .ImagedisplayTitle span:first-child{
+        font-size: 48px;
+        font-family: Inter;
+        font-weight: bold;
+        color: #000000;
+    }
+
+    .ImagedisplayTitle span:last-child{
+        font-size: 18px;
+        font-family: Inter;
+        font-weight: bold;
+        text-decoration: underline;
+        color: #000000;
+        margin-top:22px;
+        cursor: pointer;
+    }
+
+    /* 显示第一行图片 */
+    .firstImageColumn{
+        margin-left:10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* 显示第二行图片 */
+    .secondImageColumn{
+        margin:80px 0 0 13px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    /* 第一行图片显示问题 */
+    .firstColumnPhoto{
+        width: 815px;
+        height: 491px;
+        background: #93D9FF;
+        box-shadow: 13px 9px 8px 0px rgba(0,0,0,0.23);
+        border-radius: 30px;
+    }
+
+    /* 第二行图片显示问题 */
+    .secondColumnPhoto{
+        width: 508px;
+        height: 340px;
+        background: #93D9FF;
+        box-shadow: 13px 9px 8px 0px rgba(0,0,0,0.23);
+        border-radius: 30px;
+    }
+
+    .firstImageColumn > div,
+    .secondImageColumn > div{
+        position: relative;
+        z-index:1;
+    }
+
+    /* 第一行图片遮罩层 */
+    .firstColumnMaskLayer{
+        width: 815px;
+        height: 96px;
+        background: linear-gradient(to left,rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+        border-radius: 0px 0px 30px 30px;
+        position: absolute;
+        bottom:0;
+        padding:17px 91px 17px 41px;
+        box-sizing: border-box;
+    }
+
+    /* 第二行图片遮罩层 */
+    .secondColumnMaskLayer{
+        width: 508px;
+        height: 75px;
+        background: linear-gradient(to left,rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));;
+        border-radius: 0px 0px 30px 30px;
+        position: absolute;
+        bottom:0;
+    }
+
+    /* 第二行三个遮罩层内边距不一样的样式 */
+    .masklayerOne{
+        padding:28px 0 28px 39px;
+    }
+
+    .masklayerTwo{
+        padding:18px 78px 16px 40px;
+    }
+
+    .masklayerThree{
+        padding:18px 130px 18px 39px;
+    }
+
+    /* 第一行图片遮罩层里面的文字样式属性 */
+    .MaskLayerFirstColumnText{
+        font-size: 24px;
+        font-family: Inter;
+        font-weight: bold;
+        color: #FFFFFF;
+    }
+
+    /* 第二行图片遮罩层里面的文字样式属性 */
+    .MaskLayerSecondColumnText{
+        font-size: 18px;
+        font-family: Inter;
+        font-weight: bold;
+        color: #FFFFFF;
+    }
+
+    /* 世界杯分组部分UI布局 */
+    .worldCupGroup{
+        width: 100%;
+        height: 1064px;
+        background: linear-gradient(to right bottom, rgba(63,187,254,0.75), rgba(165,65,255,0.75));
+        padding:74px 249px 231px 78px;
+        box-sizing: border-box;
+    }
+
+    /* 世界杯分组标题文字样式 */
+    .groupTitle{
+        font-size: 48px;
+        font-family: Inter;
+        font-weight: bold;
+        color: #FFFFFF;
+    }
+
+    /* 展示小组区域 */
+    .groupArea{
+        padding:203px 0 0 177px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* 显示每个小组的白色区域布局 */
+    .TabImageArea{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 79px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* PC端隐藏小组布局 */
+    .TabImagePhoneArea{
+        display: none;
+    }
+
+    /* 每个小组情况的图片 */
+    .TabItem{
+        width: 300px;
+        height: 422px;
+        background: #FFFFFF;
+        box-shadow: 6px 4px 10px 0px rgba(0,0,0,0.23);
+        border-radius: 25px;
+        padding:39px 25px 22px 21px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* 小组标题文字样式 */
+    .groupTabTitle{
+        font-size: 36px;
+        font-family: Inter;
+        font-weight: bold;
+        color: #9A1032;
+        margin:0 auto;
+    }
+
+    .tabImage{
+        width: 254px;
+        height: 301px;
+        object-fit: cover;
+    }
+
+    /* 选项卡区域布局 */
+    .groupTabArea{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    /* 选项卡的点 */
+    .circleTab{
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .tabCircleactive{
+        background: #fff;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .tabCircleNonActive{
+        border: 2px solid #FFFFFF;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .circleTab:last-child{
+        margin-left:18px;
+    }
+
+    .MatchView{
+        /* width: 1920px; */
+        width:100%;
+        height: 823px !important;
+        background: url('../../image/WorldCupPhotoSix.png');
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 304px 0 304px 159px;
+        box-sizing: border-box;
+    }
+
+    .viewtextOne{
+        font-size: 48px;
+        font-family: Inter;
+        font-weight: bold;
+        color: #EEEEE4;
+    }
+
+    .viewtextTwo{
+        width: 986px;
+        font-size: 30px;
+        font-family: Inter;
+        font-weight: bold;
+        color: #EEEEE4;
+        margin:20px 0 26px 0;
+        line-height: 40px;
+    }
+
+    /* view按钮外部样式 */
+    .viewbtn{
+        width: 98px;
+        height: 45px;
+        border: 2px solid #FFFFFF;
+        border-radius: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    /* 按钮文字样式 */
+    .viewbtn span{
+        font-size: 18px;
+        font-family: Inter;
+        font-weight: bold;
+        color: #FFFFFF;
+    }
+
+    .discoverArea{
+        width: 100%;
+        height: 1645px;
+        background: url('../../image/DiscoverBg.png');
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        padding:146px 85px;
+        box-sizing: border-box;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* discover上下两区区域布局 */
+    .discover{
+        width: 1749px;
+        height: 622px;
+        background: #F9F9F5;
+        box-shadow: 14px 12px 40px 0px rgba(0,0,0,0.23);
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .discover:last-child{
+        margin-top:105px;
+    }
+
+    /* discover遮罩层 */
+    .discoverMaskLayer{
+        width: 1749px;
+        height: 106px;
+        background: linear-gradient(to right, rgba(87,158,254,0.95), rgba(255,255,255,1));
+        border-radius: 30px 0px 0px 0px;
+        padding:38px 0 38px 77px;
+        box-sizing: border-box;
+    }
+
+    .discoverMaskLayer span{
+        font-size: 36px;
+        font-family: Inter;
+        font-weight: bold;
+        color: #F9F9F5;
+    }
+
+    /* 显示discover图片区域 */
+    .discoverImageArea{
+        padding: 45px 59px 43px 74px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* 轮播图区域左侧布局 */
+    .ImageAreaItem{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ImageArea{
+        width: 742px;
+        height: 428px;
+        position: relative;
+    }
+
+    /* discover图片遮罩层上面的文字 */
+    .ImageArea span{
+        right: 90px;
+    }
+
+    /* 轮播图按钮区域布局 */
+    .ArrowArea{
+        /* display: flex; */
+        align-items: center;
+        justify-content: flex-end;
+        visibility: hidden;
+        display: none;
+    }
+
+    /* 三角形轮播图按钮 */
+    .RightArrow{
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-left: 15px solid #000;
+        border-bottom: 15px solid transparent;
+        cursor: pointer;
+    }
+
+    /* discover所展示图片的样式属性 */
+    .discoverImage{
+        width: 742px;
+        height: 428px;
+        object-fit: cover;
+        /* background: linear-gradient(90deg, rgba(21,22,23,0.95)); */
+        border-radius: 25px;
+    }
+
+    /* discover图片的遮罩层 */
+    .discoverImageMaskLayer{
+        width: 742px;
+        height: 428px;
+        background: linear-gradient(270deg, rgba(21,22,23,0.95),rgba(0,0,0,0.1));
+        position: absolute;
+        border-radius: 25px;
+    }
+
+    .discoverTitle{
+        font-size: 36px;
+        font-family: Inter;
+        font-weight: 800;
+        color: #F9F9F5;
+        position: absolute;
+        top:50%;
+        transform:translateY(-50%);
+    }
+
+    /* discover区域第四章照片的区域布局 */
+    /* 因文字有两行需要显示且并不是头对齐 */
+    .discoverImageFour{
+        position: absolute;
+        top:50%;
+        transform:translateY(-50%);
+        left:360px;
+    }
+
+    .discoverImageFour span{
+        font-size: 36px;
+        font-family: Inter;
+        font-weight: 800;
+        color: #F9F9F5;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .discoverImageFour > span:last-child{
+        margin:15px 0 0 30px;
+    }
+
+    /* about内容的布局 */
+    .aboutArea{
+        /* width: 1920px; */
+        width:100%;
+        height: 825px;
+        background: url('../../image/aboutBg.png');
+        background-size: 100% 100%;
+        padding:206px 0 209px 0;
+        box-sizing: border-box;
+    }
+
+    /* about字样所在的矩形框 */
+    .titleRectangle{
+        width: 674px;
+        /* height: 131px; */
+        background: linear-gradient(90deg, #A3DDFF, #FFFFFF);
+        opacity: 0.45;
+        /* border-radius: 66px; */
+        padding:35px 59px 25px 274px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+
+    /* about标题字样 */
+    .aboutTitle{
+        font-size: 95px;
+        font-family: Inter;
+        font-weight: 800;
+        color: #FFFFFF;
+        background: linear-gradient(0deg, #209CFF 0%, #68E0CF 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* about文字介绍的样式属性 */
+    .aboutIntroduction{
+        width: 543px;
+        font-size: 30px;
+        font-family: Inter;
+        font-weight: 600;
+        color: #F9F9F5;
+        margin-left: 243px;
+        line-height:50px;
+    }
+
+    /* 底部导航栏布局 */
+    .TourFooterArea{
+        width: 100%;
+        /* width: 1920px; */
+        height: 802px;
+        background: linear-gradient(90deg, #3FBBFE, #A541FF);
+        padding: 135px 301px 134px 247px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* 底部导航栏左侧布局 */
+    .TourFooterLeftArea{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footertitle{
+        font-size: 24px;
+        font-family: Inter;
+        font-weight: 800;
+        color: #FFFFFF;
+    }
+
+    .FooterLogoOne{
+        width: 359px;
+        height: 87px;
+        object-fit: cover;
+    }
+
+    .FooterLogoTwo{
+        width: 438px;
+        height: 59px;
+        object-fit: cover;
+    }
+
+    .FooterLogoThree{
+        width: 444px;
+        height: 533px;
+        object-fit: cover;
+    }
+
+
+    .LogoAreaOne{
+        margin:140px 0 0 118px;
+    }
+
+    .LogoAreaTwo{
+        margin: 28px 0 0 78px;
+        display: flex;
+        flex-direction: row;
+        width: 439px;
+        height: 59px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .LogoAreaThree{
+        margin: 43px 0 0 60px;
+    }
+
+    .LogoAreaFour{
+        margin-top:54px;
+    }
+
+    .footerRight{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .contactIcon{
+        width: 35px;
+        height: 35px;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    body::-webkit-scrollbar{
+        display: none !important;
+        width: 0 !important;
+    }
+
+
+@media only screen and (min-width: 300px) and (max-width: 640px){
+    .TourPage{
+        height: 100% !important;
+    }
+    .tour{
+        padding: .3125rem;
+        box-sizing: border-box;
+    }
+
+    .TourPagebg {
+        width: 22.8125rem;
+        height: 8.4375rem;
+    }
+
+    /* 页面中间部分文字显示区域 */
+    .textButtonBlock{
+        margin: 0 !important;
+        display: none !important;
+    }
+
+    /* 左侧文字按钮 */
+    .PhonetextButtonBlock{
+        display: flex;
+        flex-direction: column;
+        padding: .625rem 0 0 .625rem;
+        box-sizing: border-box;
+    }
+
+    /* 左侧第一行文字 */
+    .PhonetextButtonBlock span{
+        font-size: .875rem;
+        /* -webkit-font-family: Frick 0.3; */
+        font-weight: 400;
+        color: #F3F3F3;
+        text-shadow: 0px 7px 8px rgba(0,0,0,0.23);
+        position: relative;
+        z-index: 5;
+    }
+
+    /* 左侧第二行文字 */
+    .PhonetextButtonBlock span:nth-child(2){
+        margin-top: 2rem;
+    }
+
+    .worldCupImage{
+        width: 5rem;
+        height: 5rem;
+        object-fit: cover;
+        bottom: 0;
+        right: 0;
+    }
+
+    /* 世界杯海报图 */
+    .coverImage{
+        top: 0 !important;
+        position: relative !important;
+        width: 100%;
+        height: 10rem;
+        border-radius: 0 !important;
+        margin-top: 1.5rem;
+    }
+
+    /* 移动端倒计时区域布局整体显示 */
+    .timeBlock{
+        margin: 0 !important;
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        padding:.9375rem 0;
+        box-sizing: border-box;
+    }
+
+    /* 倒计时区域居中显示 */
+    .timeItemOne,
+    .timeItemTwo,
+    .timeItemTwo > div,
+    .timeItemThree{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 显示倒计时的三块区域 */
+    .timeItemOne{
+        margin: 0;
+    }
+
+    .timeItemTwo{
+        margin: .9375rem 0;
+        padding: 0 1.5625rem;
+        box-sizing: border-box;
+    }
+
+
+    /* Tournament starts in 文字属性 */
+    .timeItemOne span{
+        font-size: 1.125rem ;
+    }
+
+    /* 显示倒计时文字区域 */
+    .timeTitleArea span:first-child{
+        font-size: 18px;
+    }
+
+    .timeTitleArea span:last-child{
+        font-size: 14px;
+    }
+
+    .pointArea span{
+        font-size: 14px;
+    }
+
+    /* 中间显示图片区域 */
+    .ImageDisplay{
+        padding: 0;
+        height: auto;
+        width: 100%;
+    }
+
+    /* 显示图片区域上半部分显示文字区域 */
+    .ImagedisplayTitle{
+        margin: .625rem 0;
+        padding: 0 .625rem;
+        box-sizing: border-box;
+    }
+
+    /* 显示文字大小样式 */
+    .ImagedisplayTitle span{
+        font-size: .875rem !important;
+    }
+
+    /* select all字体样式布局设置 */
+    .ImagedisplayTitle span:nth-child(2){
+        margin-top: 0 !important;
+    }
+
+    /* 两行图片显示布局 */
+    .firstImageColumn,
+    .secondImageColumn{
+        flex-direction: column;
+    }
+
+    .firstImageColumn{
+        margin: .625rem 0;
+    }
+
+    .secondImageColumn{
+        margin: 0;
+    }
+
+    /* 每张图片的布局显示 */
+    .firstImageColumn > div,
+    .secondImageColumn > div{
+        width: 100%;
+        margin: .3125rem 0;
+    }
+
+
+    /* 显示的图片属性设置 */
+    .firstImageColumn div img,
+    .secondImageColumn div img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* 遮罩层布局显示 */
+    .firstColumnMaskLayer,
+    .secondColumnMaskLayer{
+        padding: .625rem;
+        box-sizing: border-box;
+        height: auto !important;
+        width: auto;
+    }
+
+    /* 遮罩层文字显示 */
+    .MaskLayerFirstColumnText,
+    .MaskLayerSecondtColumnText{
+        font-size: 1rem !important;
+    }
+
+    /* 世界杯分组区域布局 */
+    .worldCupGroup{
+        padding: 0 ;
+        box-sizing: border-box;
+        height: auto;
+    }
+
+    /* meet the final group 字样属性 */
+    .groupTitle{
+        font-size: 1.125rem;
+        margin: .9375rem 0;
+        /* 标题居中 */
+        display: flex;
+        justify-content: center;
+    }
+
+    /* 显示世界杯分组小组 标题下方区域区域 */
+    .groupArea{
+        padding: 0 ;
+        box-sizing: border-box;
+    }
+
+    /* 隐藏选项切换按钮 */
+    .groupTabArea{
+        display: none;
+    }
+
+    /* 隐藏PC端小组分组布局 */
+    .TabImageArea{
+        display: none;
+    }
+
+    /* 手机端显示小组分组布局 */
+    .TabImagePhoneArea{
+        display: flex;
+        flex-direction: row;
+        margin: 1.25rem 0;
+        align-items: center;
+        justify-content: space-between;
+        overflow-x: scroll;
+    }
+
+    /* 每个小组情况的图片 */
+    .TabPhoneItem{
+        padding: .9375rem ;
+        background: #FFFFFF;
+        box-shadow: 6px 4px 10px 0px rgba(0,0,0,0.23);
+        border-radius: 25px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        margin: 0 .625rem;
+        width: 10.75rem;
+        height: 13.75rem;
+    }
+
+    .groupTabPhoneTitle{
+        text-align: center;
+    }
+
+    /* .groupTabTitle{
+        width: 180px !important;
+        text-align: center;
+        transform: scale(0.3) !important;
+        border: 1px solid red;
+    } */
+
+    /* 显示每个小组图片的属性 */
+    .tabPhoneImage{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* view区域页面布局 */
+    .MatchView{
+        width: 100%;
+        padding: .625rem;
+        box-sizing: border-box;
+        height: 100% !important;
+    }
+
+    .viewtextOne{
+        font-size: 1.5rem;
+    }
+
+    .viewtextTwo{
+        font-size: 1rem;
+        width: auto;
+        line-height: 2.5rem;
+        margin: .9375rem 0;
+    }
+
+    /* view白色按钮外部显示样式 */
+    .viewbtn{
+        width: 5.9375rem;
+        padding: .625rem 0;
+        box-sizing: border-box;
+        height: auto;
+    }
+
+    /* discover发现区域 */
+    .discoverArea{
+        padding: 0 ;
+        box-sizing: border-box;
+        border-radius: 1.875rem 0 0 0;
+        height: auto;
+    }
+
+    .discover{
+        width: 100%;
+        height: auto;
+    }
+
+    .discover:last-child{
+        margin-top: 1.75rem;
+    }
+
+    .discoverMaskLayer{
+        padding: .625rem .0 .625rem .9375rem;
+        box-sizing: border-box;
+        height: auto;
+        border-bottom-left-radius: 0px;
+        width: 100%;
+    }
+
+    /* DISCOVER QATAR 文字字体样式 */
+    .discoverMaskLayer span{
+        font-size: 1.125rem;
+    }
+
+    /* 显示discover区域布局 */
+    .discoverImageArea{
+        padding: 0;
+        flex-direction: column;
+    }
+
+    /* 显示图片区域 */
+    .ImageAreaItem{
+        flex-direction: column;
+    }
+
+    /* 显示discover区域图片布局 */
+    .ImageArea,
+    .discoverImage{
+        width: 100%;
+        height: 100%;
+    }
+
+    .ImageArea:nth-child(2n){
+        margin-top: .625rem;
+    }
+
+    /* discover遮罩层上面的文字区域布局 */
+    .ImageArea span{
+        right: 0;
+        font-size: 1.75rem;
+    }
+
+    /* discover区域 遮罩层布局 */
+    .discoverImageMaskLayer{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* discover区域布局 */
+    .discoverImageFour{
+        left: inherit !important;
+        right: 0;
+    }
+
+    .discoverImageFour span{
+        text-align: right;
+    }
+
+    /* about页面区域布局 */
+    .aboutArea{
+        padding: 0;
+        height: 100%;
+    }
+
+    .titleRectangle{
+        width: 100%;
+        padding: .9375rem;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    /* about字体样式 */
+    .aboutTitle{
+        font-size: 3rem !important;
+    }
+
+    /* about介绍区域文字 */
+    .aboutIntroduction{
+        margin: 0;
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.875rem;
+    }
+
+    /* 底部导航栏区域 */
+    .TourFooterArea{
+        height: auto;
+        padding: 0 0 33px 0;
+        flex-direction: column-reverse;
+    }
+
+    /* 手机端导航栏底部世界杯图片区域布局 */
+    .footerRight{
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 手机端导航栏底部世界杯图片属性 */
+    .FooterLogoThree{
+        width: 10rem;
+        height: auto;
+        margin-top: .9375rem;
+    }
+
+    /* 手机端底部导航栏下半部分区域布局 */
+    .footerLeftArea{
+
+    }
+
+    /* FIFA logo图标 */
+    .LogoAreaOne{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .LogoAreaOne img{
+        width: 10rem;
+        height:  auto;
+    }
+
+    /* 显示推特 脸书等区域布局 */
+    .LogoAreaTwo{
+        margin: .9375rem 0 0 0;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: space-around;
+    }
+
+    .contactIcon {
+        width: 2.1875rem;
+        height: 2.1875rem;
+        object-fit: cover;
+    }
+
+    .LogoAreaThree,
+    .LogoAreaFour{
+        padding: 0 0 0 .9375rem;
+        box-sizing: border-box;
+    }
+
+    .LogoAreaThree span,
+    .LogoAreaFour span{
+        font-size: 1rem;
+    }
+
+    .LogoAreaThree,
+    .LogoAreaFour{
+        margin: 0;
+        width: 100%;
+    }
+
+    .LogoAreaFour{
+        margin-bottom: 1.25rem;
+    }
+
+    .contactIcon:nth-child(1){
+        width: 2.0625rem;
+        height: 1.8125rem;
+    }
+
+    .contactIcon:nth-child(2){
+        width: 1.125rem;
+        height: 2rem;
+    }
+
+}

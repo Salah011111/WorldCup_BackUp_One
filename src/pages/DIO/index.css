@@ -1,0 +1,104 @@
+.poosido {
+  position: absolute;
+  /* background-color: rgb(238, 238, 228); */
+  background-color: rgb(2, 50, 99) !important;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pooidshe {
+  width: 1040px;
+  border-radius: 20px;
+  background-color: rgb(2, 50, 99) !important;
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.5);
+}
+.Idotiu {
+  text-align: center;
+  font-size: 32px;
+  color: rgb(225, 120, 16) !important;
+  padding: 20px;
+  margin-top: 15px;
+}
+.buyser {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(1, 42, 84) !important;
+  height: 80px;
+  box-shadow: inset 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.buyser2 {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(1, 42, 84) !important;
+  height: 80px;
+  font-size: 18px;
+  box-shadow: inset 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.lloer {
+  padding-left: 20px;
+  color: #fff;
+}
+.Nipri {
+  position: absolute;
+  right: 20px;
+  color: #fff;
+}
+.kitem {
+  flex: 1;
+  font-size: 19px;
+  text-align: center;
+  color: #fff;
+}
+.busedrin {
+  margin-bottom: 40px;
+}
+.busidng {
+  text-align: center;
+  margin-top: 20px;
+}
+.busidng .licvhJ {
+  width: 400px !important;
+}
+.busiernr {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.buitme {
+  flex: 1;
+}
+.bustite {
+  text-align: center;
+  font-size: 20px;
+  color: rgb(225, 120, 16) !important;
+  font-weight: 600;
+}
+.busnr {
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+}
+.nsueriti {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  margin-top: 20px;
+}

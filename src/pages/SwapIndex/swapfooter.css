@@ -1,0 +1,44 @@
+
+/* 底部导航栏区域布局 */
+.SwapFooterArea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 底部导航栏左侧文字样式 */
+.SwapFooterLeftText{
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    text-decoration: underline;
+    color: #333437;
+}
+
+/* 导航栏底部右侧文字靠右布局 */
+.SwapFooterRightArea{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* 底部导航栏右侧文字样式 */
+.SwapFooterRightText{
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: bold;
+    color: #333437;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 640px){
+    .SwapFooterArea{
+        margin-top:.625rem;
+    }
+
+    .SwapFooterLeftText,
+    .SwapFooterRightText{
+        font-size: .5rem;
+        white-space: wrap;
+    }
+}

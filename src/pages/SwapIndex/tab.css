@@ -1,0 +1,76 @@
+/* tab选项卡区域布局 */
+.TabArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* tab选项卡外部样式 */
+.tabBtn{
+    width: 175px;
+    height: 32px;
+    background: rgba(255,255,255,0.51);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* tab选中Swap 选项卡左侧 */
+.TabSwapActiveLeftArea{
+    /* width: 75px; */
+    height: 32px;
+    background: linear-gradient(90deg, #48C6EF, #26A2FB);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* tab选中Swap 选项卡左侧 */
+.TabLiquidityActiveRightArea{
+    /* width: 100px; */
+    height: 32px;
+    background: linear-gradient(90deg, #48C6EF, #26A2FB);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+/* Liquidity */
+/* tab选中Swap 选项卡右侧 */
+/* tab选中Liquidity 选项卡左侧 */
+.TabSwapActiveRightArea,
+.TabLiquidityActiveLeftArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* tab选中Swap Swap文字样式 */
+/* tab选中Liquidity Liquidity文字样式 */
+.TabSwapActiveLeftArea span,
+.TabLiquidityActiveRightArea span{
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+/* tab选中Liquidity Swap文字样式 */
+.TabLiquidityActiveLeftArea span,
+.TabSwapActiveRightArea span{
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #333437;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 640px){
+    .tabBtn{
+        width: 175px;
+        height: 32px;
+    }
+}

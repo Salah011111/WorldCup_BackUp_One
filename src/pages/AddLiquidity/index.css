@@ -1,0 +1,25 @@
+/* 查看添加流动性弹窗 宽度 */
+.hLlXtp{
+    /* width: 25% ; */
+    width: 42%;
+}
+
+/* 添加流动性弹窗布局 使弹窗居中 */
+.kWAuZF{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.jcQTaw{
+    /* width: 150px !important; */
+    /* width: 460px !important; */
+    width: auto;
+}
+
+/* remove弹窗的宽度等等属性设置 */
+.eppSbq{
+    max-width: inherit !important;
+    width:750px !important;
+    margin:0 auto;
+}

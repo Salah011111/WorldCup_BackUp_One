@@ -1,0 +1,170 @@
+.Busdgei {
+  position: absolute;
+  background-color: rgb(2, 50, 99);
+  width: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+.nuseir {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5%;
+}
+.snuoem1 {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+  width: 600px;
+}
+.snuoem1 .nuserili .suit {
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 68px;
+  margin-bottom: 15px;
+  color: rgb(225, 120, 16);
+}
+.snuoem1 .nuserili .suit2 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.snuoem2 img {
+  height: 700px;
+}
+.suit3 {
+  margin-top: 25px;
+}
+.Nuseir {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.kuinjs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.kitem {
+  width: 290px;
+  flex: 1;
+}
+.lindt{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: rgb(225, 120, 16);
+}
+.ousi{
+    color: #fff;
+}
+.byusis{
+    padding: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    /* color: rgb(80, 139, 224); */
+    color: rgb(225, 120, 16);
+    text-align: center;
+    padding-top: 100px;
+}
+.kymseri{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+.keitem{
+    width: 410px;
+    margin-top: 50px;
+    text-align: center;
+}
+.imstim img{
+    width: 160px;
+    height: 180px;
+}
+.nuisei{
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(225, 120, 16);
+}
+.usies{
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.usfron{
+    line-height: 20px;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.byusis2{
+    padding: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(225, 120, 16);
+    text-align: center;
+    padding-top: 50px;
+}
+
+.oIines1 .aeuis{
+  width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rdnuise img{
+  height: 700px;
+  width: 700px; 
+}
+.snueioo{
+  flex: 1;
+}
+.sentitle{
+  padding: 20px 20px 20px 0px;
+  font-size: 36px;
+  font-weight: 600;
+  color: rgb(225, 120, 16) !important;
+  margin-bottom: 10px;
+}
+.nUsier{
+  line-height: 30px !important;
+  font-size: 22px;
+  color: #fff !important;
+}
+.Nsbuton{
+  padding: 20px 20px 20px 0px;
+}
+.limgne{
+  width: 1240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.limgne img{
+  height: 900px;
+}
+.snuseit{
+  text-align: center;
+  font-size: 21px;
+  font-weight: 600;
+  color: rgb(225, 120, 16) !important;
+  margin-bottom: 130px;
+  cursor: pointer;
+}
+.snuseit img{
+  height: 8px;
+  margin-left: 10px;
+}

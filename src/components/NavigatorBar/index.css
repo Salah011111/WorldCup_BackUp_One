@@ -1,0 +1,229 @@
+.nav{
+    position: relative;
+    z-index: 20;
+}
+
+/* 顶部导航栏线条上方的布局 */
+.navTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 105px;
+    align-items: center;
+}
+
+/* 导航栏按钮区域布局 */
+.navButtonblock{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+/* 导航栏每个按钮的属性 */
+.tabItem{
+    /* width:175px; */
+    height: 100%;
+    width: 175px;
+    /* background: linear-gradient(90deg, rgba(63,187,254,0.95), rgba(165,65,255,0.95)); */
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* 按钮未被点击时候的按钮文字样式 */
+.tabItem span{
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: bold;
+}
+
+/* 连接按钮区域布局 */
+.connect{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* 连接按钮外部样式 */
+.connectButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 62px;
+    background: linear-gradient(270deg, #3FBBFE, #A541FF);
+    box-shadow: 0px 7px 8px 0px rgba(0,0,0,0.23);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* 连接按钮文字样式 */
+.connecttext{
+    font-size: 18px;
+    font-family: Frick 0.3;
+    font-weight: 400;
+    color: #F3F3F3;
+    text-shadow: 0px 7px 8px rgba(0,0,0,0.23);
+}
+
+/* 顶部导航栏下方的线条 */
+.navLine{
+    width: 100%;
+    height: 3px;
+    /* border: 3px solid ; */
+    background: linear-gradient(270deg, #3FBBFE, #A541FF);
+}
+
+/* 修改第三方样式 */
+.sc-gsxnyZ{
+    display: none !important;
+}
+
+/* 隐藏左侧 竖条导航栏 */
+.czVxJH{
+    margin: 0!important;
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+
+.hzbhAV{
+    position: relative !important;
+    padding: 0 !important;
+    height: 62px !important;
+    background-color: transparent !important;
+    border-bottom: transparent !important;
+}
+
+/* 隐藏横条导航栏左侧内容 */
+.cUfjcy > .cjuMmG:first-child,
+.hzbhAV > .cjuMmG:first-child{
+    display: none !important;
+}
+
+.cUfjcy {
+    background-color: transparent;
+}
+
+/* 隐藏连接按钮右侧头像图片显示 */
+.fQMzPR{
+    display: none !important;
+}
+
+/* 隐藏地球翻译图标 */
+.tliser{
+    display: none !important;
+}
+
+.menuArea > .hwTNJS .hzbhAV > .jnvqfy:nth-child(2){
+    /* padding-right: 160px; */
+    display: flex;
+    justify-content: flex-end;
+    /* margin-top: 43px; */
+}
+
+/* 按钮外部样式 */
+.hzbhAV .jnvqfy div{
+    width: 240px;
+    height: 62px;
+    background: linear-gradient(270deg, #3FBBFE, #A541FF);
+    box-shadow: 0px 7px 8px 0px rgba(0,0,0,0.23);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 导航栏右上角按钮文字样式 */
+/* .gcCDSt,.kqVKBK{ */
+.cjuMmG > div > button.gcCDSt,
+.cjuMmG > div > button.kqVKBK{
+    border: none!important;
+    background: transparent !important;
+    font-size: 18px !important;
+    font-family: Frick 0.3;
+    font-weight: 400 !important;
+    color: #F3F3F3 !important;
+    text-shadow: 0px 7px 8px rgba(0,0,0,0.23);
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* 隐藏页面中间连接钱包按钮上面文字  */
+.dJGJuG > .jUvaaN > .botGMG > .jcQTaw {
+    display: none !important;
+}
+
+.fsbHO{
+    width: 386px;
+    height: 47px;
+    background: linear-gradient(90deg, #3FBBFE, #A541FF);
+    border-radius: 15px;
+}
+
+.licvhJ{
+    height: 47px;
+    background: linear-gradient(90deg, #3FBBFE, #A541FF);
+    border-radius: 15px;
+}
+
+/* 连接钱包按钮下方显示区域 */
+.menuArea > .hwTNJS > .bdhUmW {
+    display: none;
+}
+
+/* 解决滑动屏幕导航栏闪动现象 */
+.menuArea > .hwTNJS > .cUfjcy {
+    position: inherit;
+    background-color: inherit;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 640px){
+    /* 手机端顶部导航栏整体布局 */
+    .navTop{
+        padding: .3125rem;
+        box-sizing: border-box;
+        height: 4.0625rem;
+    }
+
+    /* 手机端不显示中间按钮区域和下方线条 */
+    .navButtonblock,
+    .navLine{
+        display: none;
+    }
+
+    .navLogo{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .navLogo img{
+        width: 6.25rem;
+    }
+
+    .menuArea{
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    /* 手机端按钮显示 */
+    .hzbhAV .jnvqfy div{
+        width: 9.0625rem;
+        height: 2.5rem;
+    }
+
+    /* 主页面左半边显示 */
+    .homeIndexTopLeft{
+        margin-top: 0px !important;
+    }
+
+    .sc-gInsOo{
+        height: 100%;
+    }
+
+    .sc-gInsOo > .sc-fHuLdG{
+        display: none !important;
+    }
+}

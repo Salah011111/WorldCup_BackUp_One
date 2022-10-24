@@ -1,0 +1,279 @@
+.HomePage{
+    display: flex;
+    position: relative;
+    height: 100vh;
+    padding: 0 160px;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 100%;
+}
+
+/* 背景图片 */
+.HomePagebg{
+    background:url('../../image/PCBackgroundImage01.png');
+    /* width:100%; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-size: 100% 100%;
+}
+
+.home{
+    width: 100%;
+    position: relative;
+    /* z-index: 2; */
+}
+
+/* 导航栏下方页面 */
+.homeIndex{
+    margin-top: 107px;
+    padding:0 245px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 图片和左侧文字显示内容区域布局 */
+.homeIndexTop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 上半部分左侧文字显示区域布局 */
+.homeIndexTopLeft{
+    margin-top:110px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 左侧第一行文字显示 */
+.textOne{
+    font-size: 36px;
+    font-family: Inter;
+    font-weight: bold;
+    color: #121314;
+    margin-left:10px;
+}
+
+/* 左侧第二行文字显示 */
+.textTwo{
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: bold;
+    color: #121314;
+    margin:30px 0 25px 10px;
+}
+
+/* 左侧按钮区域 */
+.LeftButtonBlock{
+    display: flex;
+    flex-direction: row;
+}
+
+/* 连接按钮的外部样式 */
+.connectbtn{
+    width: 174px;
+    height: 49px;
+    background: linear-gradient(90deg, #3FBBFE, #A541FF);
+    border-radius: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 连接按钮的文字显示 */
+.connecttext{
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+/* trade按钮外部样式 */
+.tradebtn{
+    width: 138px;
+    height: 50px;
+    border: 2px solid #333437;
+    border-radius: 16px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* trade按钮文字样式 */
+.tradetext{
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: bold;
+    color: #444444;
+
+}
+
+/* 世界杯图片显示 */
+.RightImage{
+    /* width: 304px; */
+    height: 408px;
+    opacity: 0.75;
+    object-fit: cover;
+}
+
+/* 上半部分右侧 世界杯图片显示区域布局 */
+.homeIndexTopRight{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* 下方显示数据区域 */
+.homeIndexBottom{
+    display: flex;
+    flex-direction: row;
+    margin-top:108px;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.DataItem{
+    display: flex;
+    flex-direction: column;
+}
+
+.DataItem span:first-child{
+    font-size: 30px;
+    font-family: Inter;
+    font-weight: bold;
+    color: #131314;
+}
+
+.DataItem span:last-child{
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: bold;
+    color: #919191;
+    margin-top:17px;
+}
+
+.Phonefooter{
+    display: none !important;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 640px){
+    .HomePage{
+        padding: 0;
+        width: 100%;
+        /* height: 100% !important;
+        position: inherit !important; */
+        background:url('../../image/PCBackgroundImage01.png');
+        background-size: 100% 100%;
+    }
+
+    /* 背景图片 */
+    .HomePagebg{
+        display: none !important;
+        /* background:url('../../image/PCBackgroundImage01.png');
+        background-size: 100% 100%; */
+    }
+
+    .homeIndex{
+        margin-top: 0;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    /* 主页页面左侧布局 */
+    .homeIndexTopLeft{
+        align-items: center;
+    }
+
+    /* 左侧两行文字显示内容 */
+    .textOne{
+        font-size: 14px;
+        margin: 5px 0 0 0;
+        white-space: nowrap;
+    }
+
+    .textTwo{
+        font-size: 14px;
+        margin: 5px 0 0 0;
+    }
+
+    /* 主页面左侧按钮显示 */
+    .connectbtn,
+    .tradebtn{
+        width: 6.25rem;
+        height: 1.875rem;
+    }
+
+    /* 主页面左侧按钮文字显示 */
+    .connecttext,
+    .tradetext{
+        font-size: 12px;
+    }
+
+    /* 主页中间页面弹性布局 */
+    .homeIndexTop{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* 主页左侧按钮布局 */
+    .LeftButtonBlock{
+        margin:5px 0 0 0;
+        justify-content: center;
+    }
+
+    /* 主页右侧区域布局 */
+    .homeIndexTopRight{
+        justify-content: center;
+        width: 100%;
+        margin-top: .9375rem;
+    }
+
+    /* 主页右侧图片显示属性 */
+    .RightImage{
+        width: 30%;
+        height: 30%;
+        /* height: auto; */
+    }
+
+    /* 主页顶部显示数据部分 */
+    .homeIndexBottom{
+        /* margin-top: 0 !important; */
+        margin-top: 3rem !important;
+        /* margin: 0; */
+        flex-direction: column;
+    }
+
+    /* 主页下方显示数据区域布局 */
+    .DataItem{
+        display: flex;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .DataItem span:first-child{
+        font-size: 18px;
+        font-family: Inter;
+        font-weight: 600;
+        color: #131314;
+    }
+
+    .DataItem span:last-child{
+        font-size: 16px;
+        font-family: Inter;
+        font-weight: 600;
+        color: #919191;
+        margin-top:5px;
+    }
+
+    .Phonefooter{
+        display: flex !important;
+    }
+}

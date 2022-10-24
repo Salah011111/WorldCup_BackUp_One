@@ -1,0 +1,286 @@
+.SwapPage{
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    padding: 0 160px;
+    box-sizing: border-box;
+}
+
+.AddLiqidity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+.Pagebg{
+    background:url('../../image/PCBackgroundImage02.png');
+    /* width:100%; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-size: 100% 100%;
+}
+
+.addLiquidityBgOne{
+    position: absolute;
+    margin:0px;
+    background:url('../../image/PCBackgroundImage02.png') no-repeat;
+    background-size:100% 100%;
+}
+
+.swap{
+    position: relative;
+    z-index: 2;
+}
+
+/* 导航栏下方页面布局 */
+.swapIndex{
+    padding: 102px 20px 73px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.swapCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.addLiquiditybtn{
+    border-radius: 16px;
+    border: none;
+    width:154px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: none !important;
+    background-color: rgb(225, 120, 16) !important;
+    padding:15px 24px;
+    box-sizing: border-box;
+}
+
+.addLiquiditybtn span{
+    color:#fff;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* 移除流动性弹窗上半部分弹窗的宽度 */
+.swapIndex > div:nth-child(2) > .fBgDBg{
+    width: 42%;
+}
+
+.fgiAxh:nth-child(2n){
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* swap弹窗上半部分 */
+.iBZLqn > .htRJve {
+    padding: .9375rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* swap弹窗中上班部分交易金额数字的文字属性 */
+.lkLplH > .eHgAlQ{
+    font-size: 14px;
+}
+
+/* swap点击弹窗后读取动画右边的内容展示隐藏 */
+.iBZLqn > .htRJve > .KwSkZ{
+    display: none !important;
+}
+
+/* swap按钮点击成功后弹窗的布局提示 */
+.iBZLqn > .htRJve > .bgdZPC{
+    justify-content: center;
+}
+
+
+/* 弹窗中间显示提供流动性金额的数据上边距 */
+.bszPtf > .eQYOcj {
+    margin: 0!important;
+}
+
+.bszPtf > .hXtPLs {
+    padding: 0 ;
+}
+
+/* 弹窗中间显示提供流动性金额的数据文字属性 */
+/* .iBZLqn > .htRJve > .bszPtf > .evkjzG { */
+.eQYOcj > .evkjzG {
+    font-size: 16px !important;
+}
+
+/* 显示两种代币部署的图案 修复显示层级较低问题 */
+.imSGmA{
+    min-width: inherit !important;
+}
+
+/* PC端显示弹窗第二行右侧图片 */
+.eQYOcj > .jOyUdX{
+    justify-content: flex-end;
+}
+
+/* remove上方按钮两列文字同行分列布局 */
+.fa-dDHS > .gxQUQn:nth-child(4) > div:first-child{
+    padding: 15px 0 !important;
+    display: flex;
+    flex-direction: row;
+}
+
+/* remove按钮上方文字居右 */
+.fa-dDHS > .gxQUQn > div > .jnvqfy > div:first-child{
+    display: none;
+}
+
+.fa-dDHS > .gxQUQn > div > .jnvqfy > div:last-child{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* 移除流动性界面下方数据显示左侧标题 */
+.jcQTaw{
+    display: block !important;
+}
+
+/* 修改选择比例的数字显示大小 */
+.gUmKXh > .cSrbEE {
+    margin-left: 15px;
+    line-height: inherit;
+    font-size: 40px;
+}
+
+/* 移除流动性弹窗第二行和第四行图片和文字居中布局 */
+.iBZLqn > .htRJve > .fa-dDHS > .botGMG:nth-child(1),
+.iBZLqn > .htRJve > .fa-dDHS > .botGMG:nth-child(3){
+    align-items: center;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 640px){
+    .SwapPage{
+        padding: 0;
+    }
+
+    /* 中间弹窗内边距显示问题 */
+    .swapIndex{
+        padding: 0.5rem;
+        padding-bottom: 45px;
+    }
+
+    /* 中间方框swap内容布局 */
+    .swapCenter{
+        margin-top: .625rem;
+    }
+
+    /* 添加流动性弹窗的上边距 */
+    .AddLiqidity{
+        margin-top: 15px;
+    }
+
+    /* 点击选择代币时候弹窗空白和便宜的显示问题 */
+    .sc-flMoUE > div:first-child{
+        display: none !important;
+    }
+
+    /* 修改点击swap按钮弹窗 居中*/
+    .kNTOXW{
+        margin: auto !important;
+    }
+
+    /* swap弹窗上半部分 */
+    .iBZLqn > .htRJve {
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* swap弹窗上半部分的边距设置 */
+    .iBZLqn > .htRJve > .fa-dDH{
+        margin:0 !important;
+    }
+
+    /* swap弹窗中上班部分交易金额数字的文字属性 */
+    .lkLplH > .eHgAlQ{
+        font-size: 10px;
+    }
+
+    /* 点击swap弹窗后的文字提示暂时隐藏起来 */
+    .iBZLqn > .htRJve > .KwSkZ{
+        display: none !important;
+    }
+
+    /* 点击流动性按钮弹窗 supply界面 */
+    .iBZLqn {
+
+    }
+
+    .cBbXqI > .bJeyPI{
+        padding: 14px;
+    }
+
+    /* 手机端添加流动性弹窗显示数据区域布局 */
+    .kvddcW > .botGMG {
+        flex-direction: column;
+    }
+
+    /* 文字居中 */
+    .kvddcW > .botGMG > .fgiAxh{
+        display: flex;
+        justify-content: center;
+    }
+
+    .kWAuZF > .hLlXtp{
+        width: inherit;
+    }
+
+    /* 删除流动性窗口大小 */
+    .swapIndex > div:nth-child(2) > .fBgDBg{
+        margin: 0;
+        width: 100%;
+    }
+
+    .swapCenter{
+        margin-top: 15px !important;
+    }
+
+    .fa-dDHS > div:first-child > .wkMOD > .kWAuZF {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* remove上方按钮两列文字同行分列布局 */
+    .fa-dDHS > .gxQUQn:nth-child(4) > div:first-child{
+        flex-direction: column;
+    }
+
+    /* remove按钮上方的文字布局 */
+    .fa-dDHS > .gxQUQn > div > .jnvqfy > div:last-child{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    /* 移除流动性弹窗第二行和第四行图片和文字居中布局 */
+    .iBZLqn > .htRJve > .fa-dDHS > .botGMG:nth-child(1),
+    .iBZLqn > .htRJve > .fa-dDHS > .botGMG:nth-child(3){
+        align-items: center;
+    }
+
+    /* 移除流动性弹窗第六行和第八行文字居中 */
+    .ghWJdw{
+        text-align: center;
+    }
+
+}
